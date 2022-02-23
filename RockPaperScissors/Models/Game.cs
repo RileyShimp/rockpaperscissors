@@ -15,6 +15,10 @@ namespace RockPaperScissors
       {
         return "Player 1 wins!";
       }
+      else if (value2 > value1)
+      {
+        return "Player 2 wins!";
+      }
       else 
       {
         return "Nobody wins";
