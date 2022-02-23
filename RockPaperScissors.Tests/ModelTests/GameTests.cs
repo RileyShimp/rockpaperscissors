@@ -20,5 +20,12 @@ namespace RockPaperScissors.Tests
     string results = Game.GameLogic("1","1"); 
     Assert.AreEqual("Player 1 and Player 2 tie.", results);
   }
+
+    [TestMethod]
+  public void GameLogic_ReturnsAWin_String()
+  {
+    string results = Game.GameLogic("2","1"); 
+    Assert.AreEqual("Player 1 wins!", results);
+  }
   }
 }

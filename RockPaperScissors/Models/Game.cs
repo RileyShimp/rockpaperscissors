@@ -10,11 +10,15 @@ namespace RockPaperScissors
       if (value1 == value2) 
       {
         return "Player 1 and Player 2 tie.";
-      } else 
+      } 
+      else if (value1 > value2)
+      {
+        return "Player 1 wins!";
+      }
+      else 
       {
         return "Nobody wins";
       }
-  
     }
   }
 }
